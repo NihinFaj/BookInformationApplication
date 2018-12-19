@@ -8,11 +8,15 @@
  */
 public class Book
 {
-    // The fields.
+    // The author of the book
     private String author;
+    // The title of the book
     private String title;
+    // The number of pages of the book
     private int pages;
+    // The reference number of the book
     private String refNumber;
+    // The numner of times book has been borrowed
     private int borrowed;
 
     /**
@@ -27,37 +31,49 @@ public class Book
         refNumber = "";
     }
 
-    //Method to print book Author name
+    /**
+     * Method to print book Author name
+     */
     public void printAuthor()
     {
         System.out.println("Author name is " + author);
     }
 
-    //Method to print book Title
+    /**
+     * Method to print book Title
+     */
     public void printTitle()
     {
         System.out.println("Book title is " + title);
     }
 
-    //Method to get book author name
+    /**
+     * Method to get book author name
+     */
     public String getAuthor()
     {
         return author;
     }
 
-    //Method to get book title
+    /**
+     * Method to get book title
+     */
     public String getTitle()
     {
         return title;
     }
 
-    //Method to get book pages
+    /**
+     * Method to get book pages
+     */
     public int getPages()
     {
         return pages;
     }
 
-    //Method to print the details of the book
+    /**
+     * Method to print the details of the book
+     */
     public void printDetails()
     {
         System.out.println("Book author name is: " + author);
@@ -73,7 +89,10 @@ public class Book
         System.out.println();
     }
     
-    //Method to set book reference number
+    /**
+     * Method to set book reference number
+     * @param ref the reference of the book
+     */
     public void setRefNumber(String ref)
     {
         if(ref.length() >= 3) {
@@ -84,19 +103,25 @@ public class Book
         }
     }
     
-    //Method to get book reference Number
+    /**
+     * Method to get book reference Number
+     */
     public String getRefNumber()
     {
         return refNumber;
     }
     
-    //Method to count how many times a book has been borrowed
+    /**
+     * Method to count how many times a book has been borrowed
+     */
     public void borrow()
     {
         borrowed = borrowed + 1;
     }
     
-    //Method to get the number of times a book has been borrowed
+    /**
+     * Method to get the number of times a book has been borrowed
+     */
     public int getBorrowed()
     {
         return borrowed;
